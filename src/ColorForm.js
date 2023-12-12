@@ -6,11 +6,13 @@ function ColorForm(props){
     const handleSubmit = (e) => {
         e.preventDefault()
         props.addColor(input)
+        setInput('')
     }
     return (
         <div>
             <form onSubmit={handleSubmit}>
                 <input type="text" 
+                value={input}
                 onChange={(e) => setInput(e.target.value)} />
                 <button type="submit">Submit!</button>
             </form>
