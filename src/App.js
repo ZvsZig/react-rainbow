@@ -24,6 +24,7 @@ function App(){
     return (
         <div className="App">
             {colorMap}
+            <ColorForm addColor={addColor} />
         </div>
     )
 }
